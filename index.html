@@ -1977,16 +1977,36 @@ newestmartix
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYzIDwtIGRhdGEuZnJhbWUoeCA9IGMoXCJkXCIsIFwiZVwiKVxuICAgICAgICAgICAgICAgICAgeSA9IGMoMSwgNCkpXG5cbmBgYCJ9 -->
-<pre class="r"><code>df3 &lt;- data.frame(x = c(&quot;d&quot;, &quot;e&quot;)
-                  y = c(1, 4))
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsb29raW5nIGF0IGRhdGEgZnJhbWVzXG5tdGNhcnMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIGJ1aWx0IGluIFIgZGF0YSBmcmFtZVxuaGVhZChtdGNhcnMpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBsb29raW5nIGF0IHRoZSBmaXJzdCA2IHJvd3Mgb2YgYSB2YXJpYWJsZVxudGFpbChtdGNhcnMpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBsb29raW5nIGF0IHRoZSBsYXN0IDYgcm93cyBvZiBhIHZhcmlhYmxlXG5zdHIobXRjYXJzKSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIGNoZWNraW5nIHRoZSBzdHJ1Y3R1cmUgb2YgeW91ciBkYXRhc2V0XG5cbiMgY3JlYXRpbmcgZGF0YSBmcmFtZXNcblxuZGYgPC0gZGF0YS5mcmFtZShjKFwiWFwiLCBcIllcIiksIGMoMSw0KSwgYygyLDUpLCBjKDMsNikpICAjIGNyZWF0aW5nIGEgMiAocm93cykgeCA0IChjb2x1bW5zKSBkYXRhIGZyYW1lXG5jb2xuYW1lcyhkZikgPC0gYyhcImNvbFwiLCBcIkFcIiwgXCJCXCIsIFwiQ1wiKSAgICAgICAgICAgICAgICAjIHJlbmFtaW5nIHRoZSBjb2x1bW5zIG9mIHRoZSBkYXRhIGZyYW1lXG5cbmRmXzIgPC0gZGF0YS5mcmFtZShJRCA9IGMoMSwgNSwgODgsIDk5KSwgICAgICAgICMgY3JlYXRpbmcgYSBkYXRhIGZyYW1lIGFuZCBhZGRpbmcgY29sdW1uIG5hbWVzIGF0IHRoZSBzYW1lIHRpbWVcbiAgICAgICAgICAgICAgICAgbGV0ID0gYyhcInJcIiwgXCJUVFRcIiwgXCJVXCIsIFwiaVwiKSxcbiAgICAgICAgICAgICAgICAgYWdlID0gYygyMiwgNTYsIDM0LCA3NykpXG5cbnNleCA8LSBjKFwiRlwiLCBcIk1cIiwgXCJGXCIpXG5hZ2UgPC0gYygzMSwgMzIsIDYxKVxuZ3VpdGFyIDwtIGMoRkFMU0UsIFRSVUUsIEZBTFNFKVxuZGF0YSA8LSBkYXRhLmZyYW1lKHNleCwgYWdlLCBndWl0YXIpICAgICAgICAgICMgY3JlYXRpbmcgYSBkYXRhIGZyYW1lIHVzaW5nIHRoZSB2ZWN0b3JzIGFib3ZlLiBUaGUgbmFtZSBvZiB0aGUgY29sdW1ucyB3aWxsIGJlIHRoZSBuYW1lcyBvZiB0aGUgdmVjdG9ycy5cbnJvd25hbWVzKGRhdGEpIDwtIGMoJ1ZhbmlrYScsICdUb21pa2EnLCAnQV9ueXVza2EnKSAjIGNoYW5naW5nIHRoZSByb3cgbmFtZXNcblxuIyBzZWxlY3RpbmcgZWxlbWVudHMgZnJvbSBkYXRhIGZyYW1lc1xuZGF0YVsxLDFdICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBzZWxlY3RpbmcgdGhlIGVsZW1lbnQgaW4gZmlyc3Qgcm93IGZpcnN0IGNvbHVtblxuZGF0YVsxOjIsICdhZ2UnXSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBzZWxlY3RpbmcgdGhlIGZpcnN0IHR3byBlbGVtZW50cyBpbiB0aGUgJ2FnZScgY29sdW1uXG5kYXRhW1wiVmFuaWthXCIsIFwiYWdlXCJdICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBzZWxlY3RpbmcgYnkgdGhhIG5hbWUgb2YgdGhlIHJvdyBhbmQgY29sdW1uXG5kYXRhJGd1aXRhciAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHNlbGVjdGluZyB0aGUgZ3VpdGFyIGNvbHVtblxuc3Vic2V0KGRhdGEsIHN1YnNldCA9IGFnZSA8IDUwKSAgICAgICAgICAgICAgICAgIyBzZWxlY3RpbmcgdGhlIGVsZW1lbnRzIHRoYXQgaGF2ZSBsb3dlciBhZ2UgdGhhbiA1MC4gTm90ZSB0aGF0IHlvdSBuZWVkIGEgY29uZGl0b24gaW4gdGhlIGFyZ3VtZW50XG5cbmBgYCJ9 -->
+<pre class="r"><code># looking at data frames
+mtcars                                          # built in R data frame
+head(mtcars)                                    # looking at the first 6 rows of a variable
+tail(mtcars)                                    # looking at the last 6 rows of a variable
+str(mtcars)                                     # checking the structure of your dataset
+
+# creating data frames
+
+df &lt;- data.frame(c(&quot;X&quot;, &quot;Y&quot;), c(1,4), c(2,5), c(3,6))  # creating a 2 (rows) x 4 (columns) data frame
+colnames(df) &lt;- c(&quot;col&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;)                # renaming the columns of the data frame
+
+df_2 &lt;- data.frame(ID = c(1, 5, 88, 99),        # creating a data frame and adding column names at the same time
+                 let = c(&quot;r&quot;, &quot;TTT&quot;, &quot;U&quot;, &quot;i&quot;),
+                 age = c(22, 56, 34, 77))
+
+sex &lt;- c(&quot;F&quot;, &quot;M&quot;, &quot;F&quot;)
+age &lt;- c(31, 32, 61)
+guitar &lt;- c(FALSE, TRUE, FALSE)
+data &lt;- data.frame(sex, age, guitar)          # creating a data frame using the vectors above. The name of the columns will be the names of the vectors.
+rownames(data) &lt;- c(&#39;Vanika&#39;, &#39;Tomika&#39;, &#39;A_nyuska&#39;) # changing the row names
+
+# selecting elements from data frames
+data[1,1]                                       # selecting the element in first row first column
+data[1:2, &#39;age&#39;]                                # selecting the first two elements in the &#39;age&#39; column
+data[&quot;Vanika&quot;, &quot;age&quot;]                           # selecting by tha name of the row and column
+data$guitar                                     # selecting the guitar column
+subset(data, subset = age &lt; 50)                 # selecting the elements that have lower age than 50. Note that you need a conditon in the argument
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IHVuZXhwZWN0ZWQgc3ltYm9sIGluOlxuXCJkZjMgPC0gZGF0YS5mcmFtZSh4ID0gYyhcImRcIiwgXCJlXCIpXG4gICAgICAgICAgICAgICAgICB5XCJcbiJ9 -->
-<pre><code>Error: unexpected symbol in:
-&quot;df3 &lt;- data.frame(x = c(&quot;d&quot;, &quot;e&quot;)
-                  y&quot;</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><br /></p>
